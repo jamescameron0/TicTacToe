@@ -31,6 +31,9 @@ board{
     gap: 10px;
     padding: 25px;
     border-radius: 10px;
+    width: 100%;
+    width: 100%;
+    max-width: 350px;
     
 }
 display{
