@@ -3,8 +3,8 @@ buttons{
 }
 
 button{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background-color: rgb(255, 255, 255);
     font-size: 4rem;
     color: rgb(213, 90, 115);
@@ -68,9 +68,38 @@ display{
 }
 
 @media (max-width: 600px) {
+    
     button {
-        width: 60px;
-        height: 60px;
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        width: 80px;
+        height: 85px;
+        font-size: 4rem; /* Adjust font size for smaller screens */
+        text-align: center;
+    }
+
+    board {
+        background-color: rgb(119, 155, 203);
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        height: 38%;
+        max-width: 350px;
+    }
+
+    .reset-btn {
+        padding: 10px ;
+        font-size: 1.2rem;
+        background-color: lightgray;
+        color: rgb(213, 90, 115);
+        border: none;
+        border-radius: 50px;
+        font-family: sans-serif;
+        display: none;
+        width: 50%;
+        height: 20%;
+
     }
 }
+
