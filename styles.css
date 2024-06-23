@@ -3,10 +3,10 @@ buttons{
 }
 
 button{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: rgb(255, 255, 255);
-    font-size: 6rem;
+    font-size: 4rem;
     color: rgb(213, 90, 115);
     text-align: center;
     font-family: sans-serif;
@@ -32,7 +32,6 @@ board{
     padding: 25px;
     border-radius: 10px;
     width: 100%;
-    width: 100%;
     max-width: 350px;
     
 }
@@ -52,6 +51,8 @@ display{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh; 
+    padding: 20px;
 }
 
 .reset-btn {
@@ -64,4 +65,12 @@ display{
     border-radius: 5px;
     font-family: sans-serif;
     display: none;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
